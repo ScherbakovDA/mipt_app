@@ -9,8 +9,8 @@ class Application
 {
 private:
     Application(){};
-    Application(const OnlyOne& root) = delete;
-    Application& operator=(const OnlyOne&) = delete;
+    Application(const Application& root);
+    Application& operator=(const Application&);
 public:
 
     std::vector<GameObject> Objects;
