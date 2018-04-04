@@ -25,7 +25,7 @@ public:
 
     sf::Color color;
 
-protected:
+private:
 
     sf::Sprite sprite;
 
@@ -35,7 +35,7 @@ protected:
 
 };
 
-class Ball:protected Base_obj
+class Ball:Base_obj
 {
     
 };

@@ -1,0 +1,13 @@
+CC=g++
+CFLAGS=-c
+SOURCES=main.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+
+all: Game
+	
+Game: $(OBJECTS)
+	$(CC) $(OBJECTS) -o Game -lsfml-window -lsfml-graphics -lsfml-system
+
+
+$(OBJECTS): $(SOURCES)
+	$(CC) $(CFLAGS) $(SOURCES)
